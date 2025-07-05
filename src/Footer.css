@@ -1,0 +1,11 @@
+.footer {
+  background-color: magenta;
+
+  height: 80px;
+
+  margin-top: 10px;
+  padding: 10px;
+
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+}

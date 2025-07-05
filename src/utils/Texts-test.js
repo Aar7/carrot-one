@@ -1,0 +1,31 @@
+// export const testTexts = [
+//   "One message. One unassuming, innocent message:",
+//   '"Raw 🥕 are disgusting..."',
+//   "Somehow, you noticed that",
+//   "...that's why you messaged me.",
+//   "You just couldn't help yourself, could you 👉🏽?",
+//   "text5",
+// ];
+
+export const testTexts = [
+  "I see an image...",
+  "...two people going about their journeys",
+  "weary-eyed,",
+  "tired,",
+  "and losing hope.",
+  "There are some things that are working out for each of them.",
+  "They can support themselves a little,",
+  "they have the drive to carry on",
+  "but they have the weight of the world on their individual shoulders",
+  "like a yoke upon a bull",
+  "it didn't ask for it.",
+  "One afternoon they cross paths again.",
+  "Distant 'hellos'...",
+  "...friendly waves",
+  "...they torrent back...",
+  "",
+  "",
+  "",
+  "",
+  "",
+];

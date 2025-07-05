@@ -1,0 +1,19 @@
+.imagebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  cursor: pointer;
+  background-color: pink;
+  /* height: auto;
+  width: 50%; */
+  height: 400px;
+  width: auto;
+
+  margin: 5px;
+  /* padding: 5px; */
+  box-sizing: content-box;
+
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
