@@ -21,8 +21,8 @@ function ImageBox({ textIndex }) {
       >
         <img
           className="imagebox"
-          src={images[textIndex]}
-          alt="testImage alt text"
+          src={images[textIndex].image}
+          alt={`${images[textIndex].alt}`}
         />
       </motion.div>
     </AnimatePresence>

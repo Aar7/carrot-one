@@ -8,8 +8,10 @@ import ImageBox from "./ImageBox";
 
 function Body() {
   const [num, setNum] = useState(0);
+  const click = new Audio("/pen-click.mp3");
 
   function handleChangeNum() {
+    click.play();
     const arrayLen = testTexts.length - 1;
     if (num === arrayLen) {
       setNum(0);
@@ -28,6 +30,7 @@ function Body() {
           framerKey={num}
         />
         <ImageBox textIndex={testTexts[num].index} />
+        {/* <audio src="./public/night-snow.mp3" autoplay loop controls /> */}
       </div>
     </main>
   );

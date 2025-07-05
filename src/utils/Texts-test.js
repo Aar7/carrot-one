@@ -28,9 +28,5 @@ export const testTexts = [
   { index: 0, text: "Distant 'hellos'..." },
   { index: 0, text: "...friendly waves" },
   { index: 0, text: "...they torrent back..." },
-  { index: 0, text: "" },
-  { index: 0, text: "" },
-  { index: 0, text: "" },
-  { index: 0, text: "" },
-  { index: 0, text: "" },
+  // { index: 0, text: "" },
 ];
