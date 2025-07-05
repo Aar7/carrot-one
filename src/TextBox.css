@@ -1,3 +1,7 @@
+.motion__wrapper {
+  width: 100%;
+}
+
 .textbox {
   display: flex;
   flex-direction: column;

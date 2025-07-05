@@ -1,12 +1,31 @@
+import { useEffect, useState } from "react";
 import "./ImageBox.css";
+import { images } from "./utils/images";
+import { motion, AnimatePresence } from "framer-motion";
 
-function ImageBox() {
+function ImageBox({ textIndex }) {
+  // const [image, setImage] = useState("");
+
+  useEffect(() => {
+    console.log(images[textIndex]);
+  }, [textIndex]);
   return (
-    <img
-      className="imagebox"
-      src="https://images.unsplash.com/photo-1735014637071-bc09221e6c87?q=80&w=886&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="testImage alt text"
-    />
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={textIndex}
+        className="body__wrapper"
+        initial={{ opacity: 0, x: -10 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: 10 }}
+        transition={{ duration: 0.75 }}
+      >
+        <img
+          className="imagebox"
+          src={images[textIndex]}
+          alt="testImage alt text"
+        />
+      </motion.div>
+    </AnimatePresence>
   );
 }
 
