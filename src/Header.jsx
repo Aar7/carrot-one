@@ -1,11 +1,20 @@
 import "./Header.css";
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
 
 function Header({ time }) {
   return (
     <header className="header">
       <p className="header__title">This is the title</p>
-      <audio src="/night-snow.mp3" autoplay loop controls />
-      <p className="header__time">{time}</p>
+      <div className="audio__player">
+        <AudioPlayer
+          src="/night-snow.mp3"
+          className="audio__player"
+          onPlay={(e) => console.log("Playing")}
+          autoPlay={false}
+        />
+      </div>
+      {/* <p className="header__time">{time}</p> */}
     </header>
   );
 }

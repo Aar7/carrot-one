@@ -8,7 +8,8 @@
   justify-content: center;
 
   cursor: pointer;
-  background-color: pink;
+  background-color: rgb(76, 255, 76);
+  border: solid black 1px;
   height: 150px;
   width: 50%;
 

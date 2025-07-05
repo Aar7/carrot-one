@@ -8,31 +8,36 @@ import Body from "./Body";
 import Footer from "./Footer";
 
 function App() {
-  const [time, setTime] = useState(getCurrentTime());
+  const [name, setName] = useState("");
+  let input = "";
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(getCurrentTime());
-    }, 1000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  function getCurrentTime() {
-    const now = new Date();
-    return now.toLocaleTimeString();
+  function handleClickButton() {
+    while (!input) {
+      input = prompt("Type the right word to enter:");
+    }
+    setName(input);
   }
 
+  while (name !== "Rayhanah") {
+    return (
+      <>
+        <button
+          type="button"
+          className="startButton"
+          onClick={handleClickButton}
+        >
+          Click me 😃
+        </button>
+
+        <p className="wrong">{name ? `${name} is invalid` : ""}</p>
+      </>
+    );
+  }
   return (
     <>
-      <Header time={time} />
+      <Header />
       <Body />
       <Footer />
-      <Routes>
-        <Route path="/" />
-      </Routes>
     </>
   );
 }

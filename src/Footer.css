@@ -1,10 +1,13 @@
 .footer {
-  background-color: magenta;
+  background-color: rgba(0, 0, 255, 0.486);
+  border: solid black 1px;
 
   height: 80px;
 
   margin-top: 10px;
   padding: 10px;
+
+  border-top: none;
 
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;

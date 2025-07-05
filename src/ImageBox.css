@@ -4,14 +4,15 @@
   justify-content: center;
 
   cursor: pointer;
-  background-color: pink;
+  background-color: rgb(76, 255, 76);
+  border: solid black 1px;
   /* height: auto;
   width: 50%; */
   height: 400px;
   width: auto;
 
   margin: 5px;
-  /* padding: 5px; */
+  padding: 5px;
   box-sizing: content-box;
 
   border-top-left-radius: 15px;

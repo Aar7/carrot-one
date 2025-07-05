@@ -5,9 +5,12 @@
 
   margin-bottom: 10px;
   padding: 10px;
+  padding-right: 5px;
   height: 80px;
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 255, 0.486);
+  border: solid black 1px;
+  border-bottom: none;
 
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -17,6 +20,59 @@
   align-self: center;
   font-size: 40px;
 }
-.header__time {
+
+.audio__player {
+  padding: 0;
+  min-width: 300px;
+  height: 90px;
   align-self: center;
+}
+
+.audio__player .rhap_container {
+  padding: 0;
+  background-color: transparent;
+  color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: none;
+
+  border: black solid 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 15px;
+}
+
+.audio__player .rhap_play-pause-button {
+  color: rgb(76, 255, 76);
+}
+
+.audio__player .rhap_progress-filled {
+  background-color: rgb(76, 255, 76);
+}
+
+/* .audio__player .rhap_volume-bar {
+  background-color: rgb(76, 255, 76);
+} */
+
+.audio__player .rhap_progress-indicator {
+  background-color: rgb(76, 255, 76);
+}
+
+.audio__player .rhap_volume-indicator {
+  background-color: rgb(76, 255, 76);
+}
+
+.audio__player .rhap_download-progress {
+  background-color: black;
+}
+
+.audio__player .iconify--mdi {
+  border-radius: 5px;
+  background-color: black;
+}
+
+.audio__player .rhap_time {
+  color: white;
 }
