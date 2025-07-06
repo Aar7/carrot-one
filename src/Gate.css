@@ -14,3 +14,10 @@
   background-color: transparent;
   box-shadow: 10px 10px 5px black;
 }
+
+.wrong {
+  color: red;
+  width: 30%;
+  background-color: white;
+  align-self: center;
+}

@@ -32,7 +32,7 @@ function Gate({ name, setName, navigate }) {
         Click me 😃
       </button>
 
-      <p className="wrong">{name ? `${name} is invalid` : ""}</p>
+      <p className="wrong">{name ? `${name} is invalid. Try again.` : ""}</p>
     </>
   );
 }

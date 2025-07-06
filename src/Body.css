@@ -6,9 +6,7 @@
   background-color: rgba(76, 255, 76, 0.6);
   background-color: transparent;
 
-  border: solid black 1px;
-  border-top: none;
-  border-bottom: none;
+  border: none;
 
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
