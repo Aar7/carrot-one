@@ -13,23 +13,6 @@
   background-color: rgb(76, 255, 76);
 }
 
-.startButton {
-  border: none;
-  background-color: rgba(0, 0, 255, 0.486);
-  cursor: pointer;
-  font-size: 40px;
-
-  width: 30%;
-  align-self: center;
-
-  border-radius: 10px;
-}
-
-.startButton:hover {
-  background-color: transparent;
-  box-shadow: 10px 10px 5px black;
-}
-
 /* .logo {
   height: 6em;
   padding: 1.5em;

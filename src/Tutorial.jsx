@@ -12,7 +12,7 @@ function Tutorial({ navigate }) {
   function handleChangeIndex() {
     const arrayLen = tutorial.length - 1;
     if (index === arrayLen) {
-      navigate("/storytime");
+      navigate("/uploads");
     } else {
       setIndex(index + 1);
     }
