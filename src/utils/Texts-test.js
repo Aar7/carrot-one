@@ -7,6 +7,10 @@
 // ];
 
 export const testTexts = [
+  {
+    index: 0,
+    text: "If the music at the top right isn't playing, feel free to play it :)",
+  },
   { index: 0, text: "I see an image..." },
   { index: 1, text: "...two people going about their journeys" },
   { index: 2, text: "weary-eyed," },
@@ -28,5 +32,36 @@ export const testTexts = [
   { index: 0, text: "Distant 'hellos'..." },
   { index: 0, text: "...friendly waves" },
   { index: 0, text: "...they torrent back..." },
+  { index: 0, text: "pleasant memories of ebullience and friendly faces" },
+  { index: 0, text: "but a disconsideration of no significant importance " },
+  { index: 0, text: "makes her draw arms!" },
+  { index: 0, text: "They decide to travel together for a while." },
+  {
+    index: 0,
+    text: "Without having ever looked back, their footsteps leave life and prosperity wherever they lay.",
+  },
+  { index: 0, text: "Life breathes from the compacted dirt," },
+  { index: 0, text: "trampled grasses sprout mighty oaks and elms" },
+  {
+    index: 0,
+    text: "and strong infrastructure is erected that symbolises the solidification of their union.",
+  },
+  { index: 0, text: "They grow closer" },
+  { index: 0, text: "their desire for one another increases" },
+  { index: 0, text: "Their attraction grows like a binary system" },
+  {
+    index: 0,
+    text: "he looks back upon what they created, wondering if what he feels is true.",
+  },
+  { index: 0, text: "He ponders for days..." },
+  { index: 0, text: "...weeks pass by." },
+  { index: 0, text: "Eventually..." },
+  {
+    index: 0,
+    text: "he asks her if she would like to create a world together",
+  },
+  { index: 0, text: "to be forever united in their creative love." },
+  // { index: 0, text: "" },
+  // { index: 0, text: "" },
   // { index: 0, text: "" },
 ];

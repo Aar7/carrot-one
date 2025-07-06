@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import "./ImageBox.css";
-import { images } from "./utils/images";
+// import { images } from "./utils/images";
 import { motion, AnimatePresence } from "framer-motion";
 
-function ImageBox({ textIndex }) {
+function ImageBox({ textIndex, images }) {
   // const [image, setImage] = useState("");
 
   useEffect(() => {
     console.log(images[textIndex]);
-  }, [textIndex]);
+  }, []);
   return (
     <AnimatePresence mode="wait">
       <motion.div

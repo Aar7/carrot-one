@@ -11,7 +11,8 @@ function Header({ time }) {
           src="/night-snow.mp3"
           className="audio__player"
           onPlay={(e) => console.log("Playing")}
-          autoPlay={false}
+          autoPlay={true}
+          loop={true}
         />
       </div>
       {/* <p className="header__time">{time}</p> */}

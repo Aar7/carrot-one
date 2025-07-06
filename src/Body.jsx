@@ -2,8 +2,10 @@ import "./Body.css";
 
 import { useState } from "react";
 
-import TextBox from "./TextBox";
 import { testTexts } from "./utils/Texts-test";
+import { images } from "./utils/images";
+
+import TextBox from "./TextBox";
 import ImageBox from "./ImageBox";
 
 function Body() {
@@ -29,7 +31,7 @@ function Body() {
           handleChangeNum={handleChangeNum}
           framerKey={num}
         />
-        <ImageBox textIndex={testTexts[num].index} />
+        <ImageBox textIndex={testTexts[num].index} images={images} />
         {/* <audio src="./public/night-snow.mp3" autoplay loop controls /> */}
       </div>
     </main>

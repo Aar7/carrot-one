@@ -1,14 +1,16 @@
 import "./App.css";
 
 import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 import Header from "./Header";
 import Body from "./Body";
 import Footer from "./Footer";
+import Tutorial from "./Tutorial";
 
 function App() {
   const [name, setName] = useState("");
+  const navigate = useNavigate();
   let input = "";
 
   function handleClickButton() {
@@ -35,9 +37,19 @@ function App() {
   }
   return (
     <>
-      <Header />
-      <Body />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Tutorial navigate={navigate} />} />
+        <Route
+          path="/storytime"
+          element={
+            <>
+              <Header />
+              <Body />
+              <Footer />
+            </>
+          }
+        />
+      </Routes>
     </>
   );
 }

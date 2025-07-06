@@ -1,7 +1,7 @@
 import "./TextBox.css";
 import { motion, AnimatePresence } from "framer-motion";
 
-function TextBox({ text, textIndex, handleChangeNum, framerKey }) {
+function TextBox({ text, handleChangeNum, framerKey }) {
   function handleTextBoxClick(event) {
     console.log(event.target.innerText);
     handleChangeNum();
