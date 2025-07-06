@@ -1,22 +1,22 @@
 export const tutImages = [
   {
     alt: "Florist",
-    src: "/public/1.png",
+    src: "/1.png",
   },
   {
     alt: "Come...",
-    src: "/public/2.png",
+    src: "/2.png",
   },
   {
     alt: "",
-    src: "/public/3.png",
+    src: "/3.png",
   },
   {
     alt: "",
-    src: "/public/4.png",
+    src: "/4.png",
   },
   {
     alt: "",
-    src: "/public/5.png",
+    src: "/5.png",
   },
 ];
