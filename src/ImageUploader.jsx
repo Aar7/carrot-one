@@ -29,7 +29,13 @@ function ImageUploader({ onImagesReady }) {
 
   return (
     <div>
-      <input type="file" multiple accept="image/*" onChange={handleUpload} />
+      <input
+        type="file"
+        multiple
+        accept="image/*"
+        onChange={handleUpload}
+        className="imageuploader__input"
+      />
       <div
         style={{
           display: "flex",

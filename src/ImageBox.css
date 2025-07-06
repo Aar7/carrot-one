@@ -8,8 +8,9 @@
   border: solid black 1px;
   /* height: auto;
   width: 50%; */
-  height: 400px;
+  max-height: 400px;
   width: auto;
+  /* max-width: 80%; */
 
   margin: 5px;
   padding: 5px;
@@ -17,4 +18,14 @@
 
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.imagebox__reupload {
+  color: red;
+  background-color: white;
+  padding: 0 5px;
+}
+
+.imagebox__link {
+  text-decoration: none;
 }

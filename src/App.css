@@ -10,7 +10,8 @@
   flex-direction: column;
   justify-content: space-between;
 
-  background-color: rgb(76, 255, 76);
+  /* background-color: rgb(76, 255, 76); */
+  background-color: transparent;
 }
 
 /* .logo {

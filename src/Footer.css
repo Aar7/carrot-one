@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgba(0, 0, 255, 0.486);
+  background-color: rgba(76, 255, 76, 0.6);
   border: solid black 1px;
 
   height: 80px;
@@ -11,4 +11,8 @@
 
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
+}
+
+.footer__text {
+  align-self: center;
 }

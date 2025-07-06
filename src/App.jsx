@@ -9,40 +9,32 @@ import Footer from "./Footer";
 import Tutorial from "./Tutorial";
 import Gate from "./Gate";
 import Uploads from "./Uploads";
+import Redirect404 from "./Redirect404";
 
 function App() {
   const [images, setImages] = useState([]);
+  const [name, setName] = useState(() => {
+    return localStorage.getItem("name") || "";
+  });
 
-  const [name, setName] = useState("");
   const navigate = useNavigate();
-  let input = "";
 
-  function handleClickGateButton() {
-    while (!input) {
-      input = prompt("Type the right word to enter:");
-    }
-    setName(input);
-  }
-
-  useEffect(() => {
-    console.log(images);
-  }, [images]);
-
-  while (name !== "Rayhanah") {
-    return (
-      <>
-        <Gate name={name} handleClickGateButton={handleClickGateButton} />
-      </>
-    );
-  }
   return (
     <>
       <Routes>
-        <Route path="/" element={<Tutorial navigate={navigate} />} />
+        <Route
+          path="/"
+          element={<Gate name={name} setName={setName} navigate={navigate} />}
+        />
+        <Route
+          path="/tutorial"
+          element={<Tutorial name={name} navigate={navigate} />}
+        />
         <Route
           path={"/uploads"}
           element={
             <Uploads
+              name={name}
               images={images}
               setImages={setImages}
               navigate={navigate}
@@ -54,11 +46,12 @@ function App() {
           element={
             <>
               <Header />
-              <Body />
+              <Body name={name} navigate={navigate} images={images} />
               <Footer />
             </>
           }
         />
+        <Route path="*" element={<Redirect404 />} />
       </Routes>
     </>
   );

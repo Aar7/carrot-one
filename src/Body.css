@@ -3,7 +3,8 @@
   flex-direction: row;
 
   height: auto;
-  background-color: rgba(0, 0, 255, 0.486);
+  background-color: rgba(76, 255, 76, 0.6);
+  background-color: transparent;
 
   border: solid black 1px;
   border-top: none;

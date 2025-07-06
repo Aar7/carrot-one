@@ -5,7 +5,7 @@ import "react-h5-audio-player/lib/styles.css";
 function Header({ time }) {
   return (
     <header className="header">
-      <p className="header__title">This is the title</p>
+      <p className="header__title">Happy Anniversary</p>
       <div className="audio__player">
         <AudioPlayer
           src="/night-snow.mp3"

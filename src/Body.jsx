@@ -1,16 +1,23 @@
 import "./Body.css";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { testTexts } from "./utils/Texts-test";
-import { images } from "./utils/images";
 
 import TextBox from "./TextBox";
 import ImageBox from "./ImageBox";
+import { lemme } from "./utils/images";
 
-function Body() {
+function Body({ name, navigate, images }) {
   const [num, setNum] = useState(0);
   const click = new Audio("/pen-click.mp3");
+
+  useEffect(() => {
+    if (name !== lemme) {
+      navigate("/");
+    }
+    console.log(name);
+  }, []);
 
   function handleChangeNum() {
     click.play();
@@ -32,7 +39,6 @@ function Body() {
           framerKey={num}
         />
         <ImageBox textIndex={testTexts[num].index} images={images} />
-        {/* <audio src="./public/night-snow.mp3" autoplay loop controls /> */}
       </div>
     </main>
   );

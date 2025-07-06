@@ -1,0 +1,11 @@
+.uploads {
+  background-color: rgba(76, 255, 76, 0.6);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.uploads__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
